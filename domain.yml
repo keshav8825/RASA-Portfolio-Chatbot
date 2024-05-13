@@ -1,0 +1,92 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - name
+  - about_me
+  - skills
+  - projects
+  - experience
+  - education
+  - portfolio
+  - contact
+  - full_stack_developer
+  - thanks
+  - help
+  - feedback
+  - address
+  - university
+ 
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_name:
+    - text: "My Name is Keshav Kumar. How can I help You Today ?"
+
+  utter_about_me:
+    - text: "Full-stack developer with 1 years of experience building web applications. Skilled in JavaScript, Nojejs(Express), and Django. How can I help you further?"
+
+  utter_skills:
+    - text: "I have skills in both front-end and back-end development, including HTML, CSS, JavaScript, React.js, Node.js, and more."
+
+  utter_experience:
+    - text: "I have experience working as a web developer intern at a codsoft company. During my internship, I collaborated with a team of developers to create and maintain web applications."
+
+  utter_education:
+    - text: "I hold a Master of Computer Application from K.R.Mangalam University, where I gained a solid foundation in computer Application principles and programming languages."
+
+  utter_portfolio:
+    - text: "You can view my portfolio and projects on my website: # Feel free to explore and reach out to me if you have any questions or inquiries."
+
+  utter_contact:
+    - text: "You can contact me via email at kumarkesav64@gmail.com or by phone at 7644808208. I'm also available on LinkedIn: https://www.linkedin.com/in/keshav-kumar-1b1823257/"
+
+  utter_thanks:
+    - text: "You're welcome! If you need any further assistance, feel free to ask."
+
+  utter_help:
+    - text: "Sure, I'm here to help! What do you need assistance with?"
+
+  utter_feedback:
+    - text: "Thank you for your feedback! Your input is valuable and helps us improve our services."
+
+  utter_address:
+    - text: "I live at Delhi . You can also find me online at https://www.linkedin.com/in/keshav-kumar-1b1823257/"
+
+  utter_university:
+    - text: "I attended K.R.Magalam University where I studied Master of computer appliaction."
+  utter_projects:
+    - text: "You can explore my portfolio and projects on my website. Feel free to check them out and let me know if you have any questions." 
+  utter_full_stack_developer:
+    - text: "Full Stack Developer"    
+
+ 
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

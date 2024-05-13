@@ -1,0 +1,333 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: name
+  examples: |
+    - What is your name?
+    - Can you tell me your name?
+    - What should I call you?
+    - Do you have a name?
+    - How should I address you?
+    - May I know your name?
+    - What do you go by?
+    - Are you given a name?
+    - Could you share your name with me?
+    - I'd like to know your name, please.
+
+- intent: about_me
+  examples: |
+    - tell me about yourself
+    - who are you?
+    - can you introduce yourself?
+    - what do you do?
+    - what's your background?
+    - could you share some details about yourself?
+    - give me some information about yourself
+    - I'd like to know more about you
+    - introduce yourself to me
+    - what's your story?
+    - could you tell me a bit about yourself?
+    - describe yourself to me
+    - who am I chatting with?
+    - can you tell me about your background?
+    - give me an overview of your experience
+    - what are your qualifications?
+    - what's your profession?
+    - tell me about your skills and expertise
+
+- intent: education
+  examples: |
+    - what is your educational background?
+    - tell me about your education
+    - where did you study?
+    - what degree do you have?
+    - can you share your academic qualifications?
+    - give me details about your schooling
+    - what is your highest level of education?
+    - where did you receive your education?
+    - talk to me about your educational journey
+    - what institutions have you attended?
+    - what qualifications do you hold?
+    - provide information about your academic background
+    - can you discuss your educational experiences?
+    - I'd like to know about your schooling
+    - share some insights about your academic achievements
+
+- intent: skills
+  examples: |
+    - what are your skills?
+    - tell me about your skills
+    - what languages do you know?
+    - what technologies are you familiar with?
+    - can you list your skills?
+    - what programming languages are you proficient in?
+    - tell me what you're good at
+    - describe your technical abilities
+    - I'd like to know about your expertise
+    - what tools are you experienced with?
+    - what are your areas of expertise?
+    - can you talk about your technical skills?
+    - what software are you skilled with?
+    - tell me about your technical proficiencies
+    - what technologies have you worked with?
+    - which programming languages have you used?
+    - can you elaborate on your technical knowledge?
+    - what frameworks are you comfortable using?
+    - give me details about your technical competencies
+
+- intent: projects
+  examples: |
+    - show me your projects
+    - what projects have you worked on?
+    - can I see your portfolio?
+    - tell me about your work
+    - what are some of your notable projects?
+    - could you share details about your projects?
+    - give me an overview of your past projects
+    - show me examples of your work
+    - what kind of projects have you been involved in?
+    - describe your recent projects
+    - I'm interested in your project experience
+    - can you talk about the projects you've completed?
+    - provide information about your past project work
+    - tell me about the projects you've contributed to
+    - list some of your projects
+    - share details about your portfolio projects
+
+- intent: contact
+  examples: |
+    - how can I contact you?
+    - what is your email address?
+    - do you have a phone number?
+    - can I reach out to you?
+    - how do I get in touch with you?
+    - what are your contact details?
+    - can you provide your contact information?
+    - I'd like to contact you, how can I do that?
+    - give me your contact info
+    - where can I find your contact information?
+    - tell me how I can contact you
+    - is there a way to reach you?
+    - I need to contact you, what's the best way?
+    - what are your preferred contact methods?
+    - I want to get in contact with you
+
+- intent: full_stack_developer
+  examples: |
+    - Are you a full-stack developer?
+    - Do you have experience as a full-stack developer?
+    - Can you work on both front-end and back-end development?
+    - Are you proficient in both front-end and back-end technologies?
+    - Have you worked on full-stack projects before?
+    - Do you consider yourself a full-stack developer?
+    - Can you handle both client-side and server-side development?
+    - Are you familiar with full-stack development frameworks?
+    - Do you possess skills in both front-end and back-end programming?
+    - Can you develop end-to-end solutions as a full-stack developer?
+    - Are you capable of working on all layers of a software application?
+
+- intent: experience
+  examples: |
+    - What is your work experience?
+    - Tell me about your work history
+    - Where have you worked before?
+    - What companies have you worked for?
+    - Can you share your professional experience?
+    - Describe your job experience
+    - What roles have you held in the past?
+    - Tell me about your previous employment
+    - Give me details about your work experience
+    - Can you talk about your career background?
+    - What positions have you had in the past?
+    - Provide information about your work history
+    - What is your employment history?
+    - Share your past work experiences
+    - Talk to me about your professional background
+    - Can you discuss your previous jobs?
+    - I'm interested in your job experience
+    - Tell me about your past roles
+    - Provide details about your career journey
+
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks a lot
+    - appreciate it
+    - thanks for your help
+    - thank you very much
+    - thanks so much
+    - thank you for the assistance
+    - I'm grateful
+    - I appreciate your help
+    - thank you for your support
+    - thanks for the information
+    - thanks for everything
+    - thank you kindly
+    - thanks for your time
+    - I owe you one
+    - I'm thankful
+    - many thanks
+    - much appreciated
+    - I'm indebted to you
+
+- intent: feedback
+  examples: |
+    - I have some feedback
+    - can I give you feedback?
+    - feedback for you
+    - feedback on your service
+    - I'd like to provide feedback
+    - I want to share some feedback
+    - here's some feedback for you
+    - I have feedback to share
+    - could I offer you some feedback?
+    - I'd like to give you my thoughts
+    - I'd like to provide some input
+    - I'd like to leave some feedback
+    - I'd like to provide some constructive criticism
+    - I want to offer some feedback for improvement
+    - I want to share my feedback with you
+    - I'd like to give you some suggestions
+    - I have some comments for you
+    - let me give you some feedback
+    - I'd like to give some feedback on your work
+
+- intent: address
+  examples: |
+    - What is your address?
+    - Can you provide your address?
+    - Where are you located?
+    - What is the physical location of your office?
+    - Where can I find you?
+    - Can you give me directions to your place?
+    - What is your street address?
+    - Could you give me your location details?
+    - Where are you situated?
+    - Do you have a specific address?
+    - Can you provide the address of your office?
+    - Where can I meet you?
+    - What's your office address?
+    - Could you tell me where you're based?
+
+- intent: university
+  examples: |
+    - Which university did you attend?
+    - Can you tell me about your university?
+    - Where did you study?
+    - What university did you graduate from?
+    - What is your alma mater?
+    - Which college or university did you go to?
+    - Can you share details about your educational institution?
+    - Tell me about your alma mater.
+    - Which university did you get your degree from?
+    - What's the name of your university?
+    - What university are you affiliated with?
+    - Can you provide information about the university you attended?
+
+- intent: help
+  examples: |
+    - Can you help me?
+    - I need some assistance
+    - Help!
+    - How can you assist me?
+    - What can you do for me?
+    - I'm lost, can you guide me?
+    - I'm confused, can you clarify?
+    - How does this work?
+    - Can you provide some guidance?
+    - I don't understand, can you explain?
+    - Can you give me some help?
+
+
+
+

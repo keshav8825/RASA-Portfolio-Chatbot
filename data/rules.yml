@@ -1,0 +1,84 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Respond to requests for help
+  steps:
+    - intent: help
+    - action: utter_help
+
+- rule: Respond to requests for the bot's name
+  steps:
+    - intent: name
+    - action: utter_name
+
+- rule: Respond to requests about the bot's background
+  steps:
+    - intent: about_me
+    - action: utter_about_me
+
+- rule: Respond to requests about the bot's skills
+  steps:
+    - intent: skills
+    - action: utter_skills
+
+- rule: Respond to requests about the bot's projects/portfolio
+  steps:
+    - intent: projects
+    - action: utter_projects
+
+- rule: Respond to requests about the bot's experience
+  steps:
+    - intent: experience
+    - action: utter_experience
+
+- rule: Respond to requests about the bot's education
+  steps:
+    - intent: education
+    - action: utter_education
+
+- rule: Respond to requests for contact information
+  steps:
+    - intent: contact
+    - action: utter_contact
+
+- rule: Respond to expressions of gratitude
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- rule: Respond to feedback
+  steps:
+    - intent: feedback
+    - action: utter_feedback
+
+- rule: Respond to requests for the bot's address
+  steps:
+    - intent: address
+    - action: utter_address
+
+- rule: Respond to requests about the bot's university
+  steps:
+    - intent: university
+    - action: utter_university
+
+- rule: Respond to requests about being a full-stack developer
+  steps:
+    - intent: full_stack_developer
+    - action: utter_full_stack_developer
+ 
+
+- rule: Default fallback action
+  steps:
+    - action: utter_default

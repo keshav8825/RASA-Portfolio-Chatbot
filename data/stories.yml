@@ -1,0 +1,107 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+## Asking for the bot's name
+- story: Asking for the bot's name
+  steps:
+    - intent: name
+    - action: utter_name
+
+## Asking about the bot's background
+- story: Asking about the bot's background
+  steps:
+    - intent: about_me
+    - action: utter_about_me
+
+## Asking about the bot's education
+- story: Asking about the bot's education
+  steps:
+    - intent: education
+    - action: utter_education
+    
+## Asking about the bot's skills
+- story: Asking about the bot's skills
+  steps:
+    - intent: skills
+    - action: utter_skills
+
+## Asking about the bot's projects/portfolio
+- story: Asking about the bot's projects/portfolio
+  steps:
+    - intent: projects
+    - action: utter_projects
+
+## Asking about the bot's experience
+- story: Asking about the bot's experience
+  steps:
+    - intent: experience
+    - action: utter_experience
+
+
+
+## Asking for contact information
+- story: Asking for contact information
+  steps:
+    - intent: contact
+    - action: utter_contact
+
+## Asking for help
+- story: Asking for help
+  steps:
+    - intent: help
+    - action: utter_help
+
+## Providing feedback
+- story: Providing feedback
+  steps:
+    - intent: feedback
+    - action: utter_feedback
+
+## Asking for the bot's address
+- story: Asking for the bot's address
+  steps:
+    - intent: address
+    - action: utter_address
+
+## Asking about the bot's university
+- story: Asking about the bot's university
+  steps:
+    - intent: university
+    - action: utter_university
+
+## Asking about being a full-stack developer
+- story: Asking about being a full-stack developer
+  steps:
+    - intent: full_stack_developer
+    - action: utter_full_stack_developer
+
+
+
